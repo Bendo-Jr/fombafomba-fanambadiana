@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notre Équipe - Maquette</title>
+  <!-- Lien vers Font Awesome pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .team-member {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+      width: 250px;
+    }
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+    .photo-frame {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: rgba(255, 255, 255, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 1rem;
+      border: 5px solid #4a90e2;
+      overflow: hidden;
+    }
+    .member-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .social-icons {
+      margin-top: 1rem;
+    }
+    .social-icons a {
+      color: #4267B2; /* Couleur de Facebook */
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #3b5998; /* Couleur plus foncée au survol */
+    }
+    .social-icons a.whatsapp {
+      color: #25D366; /* Couleur de WhatsApp */
+    }
+    .social-icons a.whatsapp:hover {
+      color: #128C7E; /* Couleur plus foncée au survol */
+    }
+    .social-icons a.location {
+      color: #FF0000; /* Couleur de la localisation */
+    }
+    .social-icons a.location:hover {
+      color: #CC0000; /* Couleur plus foncée au survol */
+    }
+
+    /* Styles individuels pour les photos */
+    .photo-jean {
+      background-image: url('/images/bend2.png'); /* Remplacez par la photo de Jean */
+    }
+    .photo-marie {
+      background-image: url('/images/fifaliana.jpg'); /* Remplacez par la photo de Marie */
+    }
+    .photo-pierre {
+      background-image: url('/images/herimamy.jpg'); /* Remplacez par la photo de Pierre */
+    }
+    .photo-sophie {
+      background-image: url('/images/richard.jpg'); /* Remplacez par la photo de Sophie */
+    }
+    .photo-luc {
+      background-image: url('/images/mantswol.jpg'); 
+    }
+
+    .home-link {
+        color: #000;
+        font-weight: 800;
+        font-size: 1.5rem;
+        padding: 10rem;
+      }
+  </style>
+</head>
+<body>
+    <a href="http://127.0.0.1:5500/index.html" class="home-link">Retourner à la page d'accueil</a>
+  <div class="container">
+    <h1>Mpikambana</h1>
+    <div class="team-grid">
+      
+      <!-- Carte 1 -->
+      <div class="team-member">
+        <div class="photo-frame photo-jean"></div>
+        <div class="member-name">Danio RADANIEL</div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100095298145880" target="_blank" title="Facebook de Jean"><i class="fab fa-facebook"></i></a>
+          <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp de Jean" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.google.com/maps/place/Befandriana/@-15.2568195,48.5376727,16z/data=!3m1!4b1!4m6!3m5!1s0x221a3ce01734e3d3:0x3dcefd82647ee4bb!8m2!3d-15.2576936!4d48.541234!
+          16s%2Fm%2F02q8qq4?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Localisation de Jean" class="location"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+      
+      <!-- Carte 2 -->
+      <div class="team-member">
+        <div class="photo-frame photo-marie"></div>
+        <div class="member-name">Edith TINASOA</div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/yas.nathan" target="_blank" title="Facebook de Marie"><i class="fab fa-facebook"></i></a>
+          <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp de Marie" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.google.com/maps/place/Ambohimangakely/@-18.89607,47.5552436,13z/data=!3m1!4b1!4m6!3m5!1s0x21f087dacd11df63:0xabce8720f70386eb!8m2!3d-18.8944352!4d47.5963285!16s%2Fg%2F1
+          1v3xk9pfd?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Localisation de Marie" class="location"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+      
+      <!-- Carte 3 -->
+      <div class="team-member">
+        <div class="photo-frame photo-pierre"></div>
+        <div class="member-name">Fenohasina HERIMAMY</div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100057313188202" target="_blank" title="Facebook de Pierre"><i class="fab fa-facebook"></i></a>
+          <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp de Pierre" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.google.com/maps/place/Miarinarivo+Itasy/@-18.9474568,46.9100364,17z/data=!3m1!4b1!4m6!3m5!1s0x21fae50a7eb4250f:0xaf351997731d3a9!8m2!3d-18.9474619!4d46.9126113!16s%2Fg%2F
+          11l28gmkr6?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Localisation de Pierre" class="location"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+      
+      <!-- Carte 4 -->
+      <div class="team-member">
+        <div class="photo-frame photo-sophie"></div>
+        <div class="member-name">Richard RASOLOFO</div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/richard.cerphe" target="_blank" title="Facebook de Sophie"><i class="fab fa-facebook"></i></a>
+          <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp de Sophie" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.google.com/maps/place/Analalava/@-14.6031388,47.7294922,15z/data=!3m1!4b1!4m6!3m5!1s0x22100d6925735a6b:0xb12ae9376e4f917a!8m2!3d-14.60316!4d47.739792!16zL20
+          vMGYyZDRu?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Localisation de Sophie" class="location"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+      
+      <!-- Carte 5 -->
+      <div class="team-member">
+        <div class="photo-frame photo-luc"></div>
+        <div class="member-name">Venance RATOMIFALY</div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100087986418253" target="_blank" title="Facebook de Luc"><i class="fab fa-facebook"></i></a>
+          <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp de Luc" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.google.com/maps/place/Analalava/@-14.6031388,47.7294922,15z/data=!3m1!4b1!4m6!3m5!1s0x22100d6925735a6b:0xb12ae9376e4f917a!8m2!3d-14.60316!4d47.739792!16zL2
+          0vMGYyZDRu?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Localisation de Luc" class="location"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

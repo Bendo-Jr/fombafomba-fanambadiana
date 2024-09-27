@@ -1,0 +1,662 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    background-color: #fcfcfc1a;
+    height: 15%;
+    width: 100%;
+}
+
+.sticky {
+  width: 100%;
+  height: 16%;
+  background-color: #00000094;
+
+}
+
+
+
+.header .logo img {
+    width: 45%;
+    padding: 0.5rem 2rem;
+    animation: ZommIn 1s ease;
+}
+
+.header .divnav-bar nav ul a{
+    color: #fff;
+    font-weight: bold;
+    padding: 0 3.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+&:hover {
+    color: #196d19;
+}
+
+}
+.hr {
+    position: absolute;
+    width: 100%;
+    height: 1%;
+    background-color: #7e837e9c;
+    top: 98%;
+}
+
+.divnav-bar{
+    animation: isRight 1.5s ease;
+}
+
+/* --------------------------------------------------Accuiel------------------------------------------------- */
+.accueil {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    z-index: -1;
+    padding-top: 9rem;
+    width: 100%;
+    height: 80vh;
+    background-image: url(./images/backround.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+
+}
+
+.accueil .vady h1 {
+    color: #fff;
+    text-align: center;
+    padding: 2.5rem 0;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    position: absolute;
+    left: 25%;
+    animation: ZommIn 1.5s ease;
+
+}
+
+.accueil .vady p {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    animation: ZommIn 1s ease-in;
+}
+
+.accueil .vady a {
+    position: absolute;
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    top: 65%;
+    left: 45%;
+    border: 3px solid rgb(100, 128, 0);
+    border-radius: 15px;
+    background-color: rgb(43, 255, 0);
+    padding: 1rem;
+    transform: scale(1);
+    opacity: 1.5;
+    transition: all 0.5s ease;
+    animation: ZommIn 1.5s ease-in;
+&:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+}
+
+
+/* ------------------------------------FANGATAHAM-BADY------------------------------------------------ */
+
+.fangataham-bady {
+    width: 100%;
+    height: 67vh;
+    /* background: linear-gradient(to bottom,  rgba(52, 105, 2, 0.425), rgba(102, 255, 0, 0.2), rgba(52, 105, 2, 0.425)); */
+    background-color: #fcfcfc;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+/* Conteneur principal avec perspective */
+.divimage1 {
+    position: relative;
+    width: 350px;
+    height: 370px;
+    perspective: 1000px; /* Ajoute de la perspective pour l'effet 3D */
+    margin: auto; /* Centre le conteneur dans son élément parent */
+    top: 40%; /* Centre verticalement */
+    transform: translateY(-50%); /* Ajuste le centrage vertical */
+}
+
+/* Conteneur pour l'effet de retournement 3D */
+.divimage2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease; /* Ajuste la durée de la transition */
+}
+
+/* Effet de retournement au survol */
+.divimage1:hover .divimage2 {
+    transform: rotateY(180deg);
+}
+
+/* Style pour le côté image */
+.divimg1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Cache la face arrière lorsque retournée */
+    background: url('./images/img1.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+a {
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border: 3px solid #566d19;
+    padding: 1rem;
+    background-color: #196d19;
+    margin-top: 28rem;
+}
+}
+
+.divimg2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Cache la face arrière lorsque retournée */
+    background: url('./images/foloir.webp') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.divimg3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Cache la face arrière lorsque retournée */
+    background: url('./images/viavy2.webp') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* FANGATAHAM-BADY________________________________   */
+
+.fangataham-bady1 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    justify-content: center;
+    padding: 1rem 0;
+h2 {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+h2::after {
+    content: " (vady)";
+    color: #3d3d3d;
+}
+}
+
+/* DINGANA-FANGATAHAMBADY_________________________________________ */
+
+.DINGANA-FANGATAHAMBADY {
+    width: 100%;
+    height: 400px;
+    background-image: url(./images/dinganafond.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 1;
+    filter: grayscale(100%);
+
+}
+
+.NoirEtblanc {
+    filter: grayscale(100%);
+}
+
+.dinganaImg img {
+   border-radius: 50%;
+   width: 365px;
+   height: 365px;
+   animation: ZommIn 1s ease forwards;
+}
+
+@keyframes ZommIn {
+    from {
+        transform: scale(0.5);
+    }
+}
+
+.text-dingana {
+    width: 50%;
+    margin-top: -35px;
+p {
+    color: #fcfcfc;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 1;
+    animation: isRight 1s ease;
+    opacity: 1.5;
+}
+}
+
+@keyframes isRight {
+    from {
+        transform: translatex(100%);
+        opacity: 0.1;
+        color: yellow;
+    }
+}
+
+
+
+
+/* Style pour le côté description */
+.divdescription {
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    background-color: #fff; /* Fond semi-transparent */
+    border:  2px solid black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden; /* Cache la face arrière lorsque retournée */
+    transform: rotateY(180deg); /* Positionne le verso pour le retournement */
+h2 {
+    color: #000;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+p {
+padding: 0.5rem 1rem;
+font-size: 1.1rem;
+color: #000;
+font-weight: 700;
+text-align:justify;
+width: 98%;
+margin-bottom: 2rem;
+}
+}
+
+.divdescription .vertespan {
+  color: #196d19;
+  font-weight: 900;
+}
+
+
+/* Style pour les liens */
+.link {
+    color: #fff;
+    text-decoration: none;
+    margin-top: -1rem;
+    display: block;
+    padding: 0.5rem;
+    border: 2px solid #fff;
+    background-color: #040458;
+    transition: all 0.5s ease;
+}
+
+.link:hover {
+    transform: scale(1.2);
+}
+
+/* ------------------------------------KABARY AMPANAMBADIANA---------------------------------- */
+
+.kabary-ampanambadiana {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: #fff;
+ }
+
+.kabary {
+    display: flex;
+    justify-content: space-between ;
+
+}
+
+.backroundbleu {
+    position: absolute;
+    width: 30%;
+    height: 430px;
+    background-image: url(./images/gasysakalava.jpg);
+    border-radius: 30px;
+    left: 2%;
+    top: 7%;
+}
+
+.sarykabary{
+    display: flex;
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    /* border: 2px solid #000; */
+    
+img {
+    width: 70%;
+    height: 430px;
+    border-radius: 30px;
+    
+}
+}
+
+.kabaryText {
+    position: absolute;
+    width: 35%;
+    height: 450px;
+    background: #fcfcfc;
+    border-radius: 30px;
+    right: 3%;
+    top: 7%;
+    border: 2px solid black;
+}
+
+.kabaryText h2 {
+    text-align: center;
+    padding: 1.2rem 0;
+}
+
+.kabaryText p {
+    padding: 1.5rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+.kabaryText a {
+    text-decoration: none;
+    color: #e7e7e7;
+    width: 30%;
+    top: 10%;
+    border: 2px solid blue;
+    padding: 0.9rem;
+    margin-left: 11rem;
+    transition: all 0.5s ease;
+    font-weight: bold;
+    background-color: #000000;
+}
+
+.kabaryText a:hover {
+    transform: scale(1.2);
+    background-color: #196d19;
+}
+
+/* fanomezana Ny vodiondry---------------------------------- */
+ 
+.fanomezanaNyvodiondry {
+    width: 100%;
+    height: 750px;
+    /* background: linear-gradient(to bottom, #0d1310, #0d360d, green); */
+    background-color: #fff;
+ }
+
+.fanomezanaNyvodiondry{
+ h1 {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    padding: 1.5rem 0;
+
+}
+p{
+    display: flex;
+    justify-content: center;
+    color: #000;
+}
+}
+
+.imgVodiondry {
+        padding: 2rem 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px; 
+    
+}
+
+.imgVodiondry img {
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+}
+
+.imgVodiondry .img2 {
+        height: 215px;
+}
+
+.imgVodiondry .img3 {
+    height: 215px;
+}
+
+.imgVodiondry .img4 {
+    height: 215px;
+}
+
+.imgVodiondry .img5 {
+    height: 215px;
+}
+
+.imgVodiondry .img6 {
+    height: 215px;
+}
+
+
+
+
+.textfanomezana {
+    p {
+     color: #000;
+    }
+    a {
+        display: flex;
+        text-decoration: none;
+        margin: 2rem 40rem;
+        color: #fff;
+        width: 9%;
+        background-color: #000;
+        padding: 1rem;
+        border-radius: 0px;
+        border: 2px solid blue;
+        transition: all 0.5s ease;
+
+    }
+
+    a:hover {
+        transform: scale(1.2);
+        background-color: #0000000e;
+    }
+}
+
+/* FANKATOAVANA NY FANAMBADIANA------------------------- */
+
+.fankatoavana {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    background: #fff;
+ }
+
+
+.fomba-slider {
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+    margin-top: 1rem;
+
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    animation: animation 20s infinite;
+    
+}
+
+.slider img {
+    height: 400px;
+    display: flex;
+    width: 100%;
+    transition: all 0.15s ease;
+    flex-shrink: 0;
+}
+
+
+@keyframes animation {
+    0% {
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.fomba-slider {
+    h1{
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem 0;
+        font-size: 1.6rem;
+    }
+
+    p {
+        color: #000;
+        width: 100%;
+        font-size: 1rem;
+        padding-bottom: 3em;
+    }
+
+    a {
+        margin: 2rem 25rem;
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: #000;
+        border: 2px solid #040458;
+        padding: 1rem 1rem;
+        border-radius: 0px;
+        border: 2px solid blue;
+        transition: all 0.5s ease;
+    }
+}
+.fomba-slider   a:hover {
+    transform: scale(1.2);
+    background-color: #196d19;
+}
+
+.reseau-sociaux  {
+    width: 100%;
+    height: 120px;
+    color: #fcfcfc;
+    font-size: 2rem;
+    background-color: #fff;
+    padding-left: 24rem;
+a{
+    color: #040458;
+    box-shadow: #196d19, #9bbd23;
+    padding: 0 4rem;
+
+}
+
+i {
+    border: 2px solid #040458;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 2px blue;
+    scale: 0.9;
+}
+
+i:hover {
+    background: #000;
+    transition: all 1s;
+    border: 2px solid rgb(36, 36, 36);
+    scale: 1.2;
+   
+}
+}
+
+/* SAKALAVA ANALALAVA-------------------------------------- */
+.mahajanga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(12, 68, 12, 0.5);
+    
+ a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: rgba(247, 247, 247, 1.2);
+    transition: all 1s;
+}
+}
+
+
+#zoneProposition span {
+    font-weight: bold;
+}
