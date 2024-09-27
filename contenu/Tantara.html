@@ -90,20 +90,5 @@
           <p>Eo amin'ny andriana Sakalava, ny fanambadiana dia nitana anjara toerana lehibe tamin'ny fifamatorana ara-politika sy ny fampifandraisana foko.</p>
         </div>
       </div>
-    
-      <script>
-        document.getElementById('sakalava-wedding').addEventListener('click', function() {
-          const colors = ['#8B4513', '#CD853F', '#DEB887', '#D2691E', '#A0522D'];
-          const elements = this.querySelectorAll('circle, rect, path');
-          elements.forEach(el => {
-            el.style.transition = 'fill 0.5s';
-            el.style.fill = colors[Math.floor(Math.random() * colors.length)];
-          });
-          setTimeout(() => {
-            elements.forEach(el => {
-              el.style.fill = '';
-            });
-          }, 1000);
-        });
-      </script>
+
     </body></html>
